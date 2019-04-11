@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>未知宽高垂直水平居中</title>
+    <style type="text/css">
+      .warp {
+        width: 500px;
+        height: 500px;
+        position: relative;
+        background: yellowgreen;
+      }
+
+      .inner {
+        position:absolute;
+        top:50%;
+        left:50%;
+        background:pink;
+        transform: translate3d(-50%,-50%,0)
+      }
+    </style>
+</head>
+<body>
+    <div class="warp">
+      <div class="inner">
+        锄禾日当午<br>
+        汗滴禾下土<br>
+        谁知盘中餐<br>
+        粒粒皆辛苦<br>
+      </div>
+    </div>
+</body>
+</html>

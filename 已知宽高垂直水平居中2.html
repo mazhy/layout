@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>已知宽高垂直水平居中2</title>
+  <style  type="text/css">
+  
+    .warp{
+       width: 500px;
+       height:500px;
+       position: relative;
+       background: yellowgreen;
+    }
+    .inner{
+      width:200px;
+      height:200px;
+      position:absolute;
+      top:0;
+      right:0;
+      bottom: 0;
+      left: 0;
+      background: pink;
+      margin:auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!--
+		绝对定位盒子的特性
+			高宽有内容撑开
+			水平方向上：   left + right + width + padding + margin = 包含块padding区域的尺寸
+									 0        0           100        auto                0           
+			垂直方向上：   top + bottom + height + padding + margin = 包含块padding区域的尺寸
+									0          0          100         auto            0			
+		-->
+  <div class="warp">
+    <div class="inner"></div>
+  </div>
+  
+</body>
+</html>
